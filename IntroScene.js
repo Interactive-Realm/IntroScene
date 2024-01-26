@@ -79,7 +79,7 @@ export default class IntroScene extends Phaser.Scene {
             startButton.setInteractive();
     
             startButton.on('pointerdown', () => {
-                this.scene.start('GameCountdown');
+                this.scene.start('GameScene');
             });
 
             // Konkurrencebetingelser
