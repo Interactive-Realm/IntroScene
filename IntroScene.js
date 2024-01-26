@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
-import Flag from '../assets/flag.png';
-import Hovedpraemie from '../assets/tekst_hovedpraemie.png';
-import Spilogvind from '../assets/knap_spilogvind.png';
+import Flag from './assets/flag.png';
+import Hovedpraemie from './assets/tekst_hovedpraemie.png';
+import Spilogvind from './assets/knap_spilogvind.png';
 
 export default class IntroScene extends Phaser.Scene {
     constructor() {
