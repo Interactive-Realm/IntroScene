@@ -24,28 +24,8 @@ export default class IntroScene extends Phaser.Scene {
         const screenCenterX = this.game.config.width / 2;
         const screenCenterY = this.game.config.height / 2;
 
-            // Pop balloner
-            // const pop_tekst1 = this.add.text(screenCenterX, 100, 'POP BALLONER', {
-            // fontFamily: 'DIN',
-            // color: 'white',
-            // font: 'bold 88px DIN',
-            // backgroundColor: '#164196',
-            // }).setPadding({x:10}).setDepth(1).setOrigin(0.5, 0.5);
-
-            // & vind!
-            // const pop_tekst2 = this.add.text(screenCenterX - pop_tekst1.width / 2, 210, '& VIND!', {
-            //     fontFamily: 'DIN',
-            //     color: 'white',
-            //     font: 'bold 88px DIN',
-            //     backgroundColor: '#e30613',
-            // }).setPadding({x:10}).setDepth(1).setOrigin(0, 0.5);
-
-            // Hovedpræmie billede
-            // const praemietekst = this.add.image(screenCenterX, 355, 'hovedpraemie');
-            // praemietekst.setDepth(1).scale = 0.7;
-
             // Uge-præmie tekst
-            const uge_praemie_tekst1 = this.add.text(screenCenterX, 510, 'The is how you play:', {
+            const uge_praemie_tekst1 = this.add.text(screenCenterX, 510, 'This is how you play:', {
                 fontFamily: 'DIN',
                 color: '#97FEED',
                 font: 'bold 40px DIN',
@@ -55,22 +35,6 @@ export default class IntroScene extends Phaser.Scene {
                 color: '#97FEED',
                 font: 'normal 30px DIN',
                 }).setDepth(1).setOrigin(0.5, 0.5);
-            // const uge_praemie_tekst3 = this.add.text(screenCenterX/ 2, 610, '2. plads - voucher på 200 kr. til intersport.dk', {
-            //     fontFamily: 'DIN',
-            //     color: 'black',
-            //     font: 'normal 30px DIN',
-            //     }).setDepth(1).setOrigin(0, 0.5);
-            // const uge_praemie_tekst4 = this.add.text(screenCenterX/ 2, 660, '3. plads - voucher på 100 kr. til intersport.dk', {
-            //     fontFamily: 'DIN',
-            //     color: 'black',
-            //     font: 'normal 30px DIN',
-            //     }).setDepth(1).setOrigin(0, 0.5);
-            // const uge_praemie_tekst5 = this.add.text(screenCenterX / 2, 710, 'SPRÆNG FLEST BALLONER OG VÆR MED I KONKURRENCEN OM FEDE PRÆMIER!', {
-            //     fontFamily: 'DIN',
-            //     color: 'black',
-            //     font: 'bold 17px DIN',
-            //     }).setDepth(1).setOrigin(0, 0.5);
-
 
             // Start knap
             const startButton = this.add.text(screenCenterX, 835, 'Start game', {
@@ -86,13 +50,6 @@ export default class IntroScene extends Phaser.Scene {
                 this.scene.start('GameScene');
             });
 
-            // Konkurrencebetingelser
-            // const konkur_beting = this.add.text(screenCenterX, 925, '* Se konkurrencebetingelser her', {
-            //     fontFamily: 'DIN',
-            //     color: 'gray',
-            //     font: 'bold 17px DIN',
-            //     }).setDepth(1).setOrigin(0.5, 0.5);
-
     }
     update(time, delta) {
         
@@ -101,7 +58,6 @@ export default class IntroScene extends Phaser.Scene {
             this.lastFlagSpawnTime = time;
         }
         //this.countdown.update();
-        
     }
 
     spawnFlagObject() {
